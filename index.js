@@ -18,10 +18,10 @@ mongoose
    .then(() => console.log("MongoDB is connected successfully"))
    .catch((err) => console.error(err));
 
- app.use('/login', require('./routers/LoginRouter'))
+//  app.use('/login', require('./routers/LoginRouter'))
 // app.use('/display', require('./Routes/Display')); 
 // app.use('/services', require('./Routes/Appointment'))
-// app.use('/products', require('./routers/Fetch'))
+app.use('/songs', require('./routers/Fetch'))
 // app.use('/orders', require('./Routes/Orders'));
 
 app.listen(PORT, () => {
